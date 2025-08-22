@@ -1,12 +1,10 @@
-print(10 + 3)
-print(10 - 3)
-print(10 * 3)
-print(10 / 3)
-print(10 % 3)
-print(10 // 3)
-print(10 ** 3)
-print('-----------------------------')
-print(10 == 3)
-print(10 != 3)
-print('Bangna' >= 'Bangpoo')
-print('Thailand' < 'THAILAND')
+#()
+#**
+#/ * % //
+#- +
+#== != > < >= <=
+#and 
+#not
+#or 
+print(10+5-2*3/2)
+print((7+5*2)-3<5%2-1 and 10+5-1*10>=(7%5+1)+(5%7+2))

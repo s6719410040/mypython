@@ -1,48 +1,31 @@
-# Operator ตัวดำเนินการ คือ เครื่องหมายทีใช้ในการประมวลผลข้อมูล
-# 1. Arithmetic Operator เครื่องหมายคำนวณ
-# (+, -, *, /, % mod, // floor, ** eponential)
-print(10 + 3)
-print(10 - 3)
-print(10 * 3)
-print(10 / 3)
-print(10 % 3)  #หารเอาเศษ
-print(10 // 3) #หารเอาส่วน
-print(10 ** 3)
-print('+++++++++++++++++++++')
-# 2. Comparison Operator เครื่องหมายเปรียบเทียบ (==, !=, >, <, >=, <=)
-# ผลลัพธ์ที่ได้จะมีแค่ True/False
-print(10 == 3)
-print(10 != 3)
-print('Bangna' >= 'Bangpoo')
-print('Thailand' < 'THAILAND')
-print('+++++++++++++++++++++')
-# 3. Logical Operator เครื่องหมาย ตรรกะ not, and, or
-# ข้อมูลที่จะใช้กับเครื่องหมายนี้จะต้องเป็น True/False และผลลัพธ์ที่ได้จากการใช้เครื่องหมาย True/False
-print(not True)
+#1.เครื่องหมายคำนวน
+#(+,-,*,/,%mod,// floor,** eponential)
+print(10+3)
+print(10-3)
+print(10*3)
+print(10/3)
+print(10%3)
+print(10//3)
+print(10**3)
+print("+++++++++++++++++++")
+#เครื่องหมายค่าเปรียบเทียบ(==,!=,>,<,>=,<=)
+print(10==3)
+print(10!=3)
+print("Bangna">="Bangpoo")
+print("Thailand"<"THAILAND")
+print(10>3)
+print(10<=3)
+print("++++++++++++++++++++++")
+#เครื่องหมาย ตรรกะ(AND,OR,NOT)
 print(not False)
-print('----')
-print(True and True) #True
+print(not True)
+print("-------")
 print(True and False)
-print(False and True)
+print(True and True)
 print(False and False)
-print('----')
-print(True or True)
+print(False and True)
+print("-------")
 print(True or False)
+print(True or True)
+print(False or False)
 print(False or True)
-print(False or False) #False
-
-
-print(10 + 5 - 2 * 3 + 4 / 2)
-
-
-
-
-
-
-
-
-
-
-
-
-print()
