@@ -6,20 +6,15 @@
 print('+++++++++++++++++++++++++')
 print(' โปรแกรมคำนวณเงินเดือน' )
 print('+++++++++++++++++++++++++')
-
-emp_id = input('รหัสพนักงาน: ')
-emp_name = input('ชื่อพนักงาน: ')
-salary = float(input('เงินเดือน: '))
-
-tax = salary * 0.07
-social_security = salary * 0.03
-net_salary = salary - tax - social_security
-
-print('\n--- สรุปผลการคำนวณ ---')
-print(f'รหัสพนักงาน: {emp_id}')
-print(f'ชื่อพนักงาน: {emp_name}')
-print(f'เงินเดือน: {salary:,.2f} บาท')
-print(f'หักภาษี 7%: {tax:,.2f} บาท')
-print(f'หักประกันสังคม 3%: {social_security:,.2f} บาท')
-print(f'เงินเดือนสุทธิ: {net_salary:,.2f} บาท')
-# ...existing
+emp_code = input('ป้อนรหัสพนักงาน: ')
+emp_name = input('ป้อนชื่อพนักงาน: ')
+emp_salary = input('ป้อนเงินเดือน: ')
+print('+++++++++++++++++++++++++')
+tax = float(emp_salary) * 7 / 100 # หรือ emp_salary * 0.07
+insurence = float(emp_salary) * 3 / 100 # หรือ emp_salary * 0.03
+emp_salary_net = float(emp_salary) - tax - insurence
+print(f'รหัส: {emp_code} ชื่อ: {emp_name} เงินเดือน: {emp_salary}')
+print(f'หักภาษี {tax} บาท')
+print(f'หักค่าประกันสังคม {insurence} บาท')
+print(f'ต้องจ่ายเงินเดือนสุทธิ {emp_salary_net} บาท' )
+print('+++++++++++++++++++++++++')
